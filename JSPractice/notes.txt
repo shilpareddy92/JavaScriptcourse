@@ -1,0 +1,24 @@
+1.JavaScript is a interpreted language. 
+It is read and executed line-by-line in real-time by a browser's JavaScript engine (like Chrome's V8) without requiring a separate compilation step beforehand.
+However, modern JavaScript engines use a hybrid approach called Just-In-Time (JIT) compilation. 
+To make web pages faster and more responsive, the engine translates the JavaScript code into machine code right before it runs
+
+2.Can we Overload a Function/Constructor in JS?
+NO, method overloading is CT polymorphism, if we do overloading,
+tha latest method is called during runtime.
+so we stick to only one method  with unique name.
+for Constructor overloading we get ERROR
+A class may only have one constructor
+
+3.Class is blue print/template for multiple objects
+
+4.Do we have concept of Inheritance in JS?
+YES,allowed
+a.A parent class can have N number of child classes
+b.All the methods/variables of PARENT can be accessble to CHILD
+c.CHILD can have its own methods/variables
+d.SIBLINGS CAN NOT access each others methods/variables
+e.PARENT CAN NOT access CHILD methods/variables
+f.MultipleInheritance is NOT ALLOWED - Classes can only extend a single class.
+g.MultilevelInheritance is ALLOWED
+
