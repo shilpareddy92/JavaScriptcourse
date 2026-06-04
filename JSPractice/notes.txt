@@ -22,3 +22,42 @@ e.PARENT CAN NOT access CHILD methods/variables
 f.MultipleInheritance is NOT ALLOWED - Classes can only extend a single class.
 g.MultilevelInheritance is ALLOWED
 
+5.//static var/function:  call it by using class name
+//non static var/function: call it by using object reference name
+
+6.Can we override a method in JS?
+YES, we can overrirde
+a.child can override(take) any method/variable from parent
+b.parent can take only its variables/methods
+c.If child class has overriden the parent class method/variable 
+then all the time the child class  overriden method is given priorty 
+else parent class method will get executed.
+
+7.refer callback1 and callback2
+
+8.Difference between Synchronization and ASynchronization Calls With Examples
+SYNCHRONOUS:
+Tasks execute one after another.
+Next line waits for current line to finish.
+Blocking behavior.
+Simpler execution flow
+ASYNCHRONOUS:
+Tasks can start now and finish later.
+Next line doesn't wait.
+Non-blocking behavior.
+Uses callbacks, promises, async/await.
+
+9.promises
+In Js, promises are a way to handle asynchronous operations 
+in a more organized and  readable manner.
+They provide a cleaner syntax for dealing with asynchronous code
+compared to traditionla callback-based approches
+prmoses are widely used for Tasks like
+making network request,reading/writing files and other operations
+that dont block the main thread
+A promise represenst a value that may not be available yet but will be
+resolved at some point in the future.
+It can be in one of three states:PENDING,FULLFILLED or REJECTED
+Once a promiseis fulfilled or rejected,its considered settled and 
+its state cannot change.
+
