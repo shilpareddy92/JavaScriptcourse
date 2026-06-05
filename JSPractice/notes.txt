@@ -93,3 +93,34 @@ It ignores failures until it finds a success.
 1.Horrible Readability
 2.Bad Indentation/Alignment of code
 3.Error handling
+
+16.Promise chaining for coffee machine
+
+17.Async await
+a.Initially, JavaScript handled asynchronous operations
+using callback functions.
+b.A callback is a function passed as an argument to another function 
+and executed after an asynchronous task completes.
+However, when multiple asynchronous operations depended
+on each other, callbacks became deeply nested, leading to 
+Callback Hell (also known as the Pyramid of Doom). 
+This made the code difficult to read, maintain, debug, 
+and handle errors.
+c.To solve these problems, Promises were introduced.
+d.A Promise represents the eventual completion (or failure) of 
+an asynchronous operation and its resulting value.
+e.Promises allow asynchronous code to be written in a 
+cleaner way using .then() and .catch(), 
+reducing nesting and providing centralized error handling.
+f.Although Promises improved readability, 
+long chains of .then() calls could still become difficult to follow.
+g.Therefore, async/await was introduced as 
+syntactic sugar over Promises.
+h.It allows asynchronous code to be written in a style that looks similar to synchronous code, making it even more readable and easier to maintain.
+Callbacks
+   ↓
+Callback Hell (deep nesting, difficult maintenance)
+   ↓
+Promises (.then(), .catch())
+   ↓
+Async/Await (cleaner syntax over Promises)
