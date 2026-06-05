@@ -124,3 +124,7 @@ Callback Hell (deep nesting, difficult maintenance)
 Promises (.then(), .catch())
    ↓
 Async/Await (cleaner syntax over Promises)
+
+18.console
+19.destructuring
+
