@@ -61,3 +61,35 @@ It can be in one of three states:PENDING,FULLFILLED or REJECTED
 Once a promiseis fulfilled or rejected,its considered settled and 
 its state cannot change.
 
+
+10.Promise cahining
+promised can be easily cahined together using then() allowing you to
+sequence asynchronous operations.This is often referred to as "promise chaining"
+Every then return resolve nad reject
+
+11.promiseAll.js
+It is commnly used when you want to perform multiple asynchronous 
+operations in parallel and wait for all of them to complete 
+before moving on.
+It returns a new promise that:
+
+✅ Resolves when all promises resolve
+❌ Rejects immediately if any one promise rejects
+
+12.Promise.allSettled()
+Promise.allSettled() waits for all promises to finish, whether they succeed or fail.
+
+13.What is Promise.race()?
+Promise.race() returns the result of the first promise that settles.
+"Settles" means either:
+✅ Resolves (success)
+❌ Rejects (failure)
+It doesn't wait for the others.
+
+14.Promise.any() returns the first successful (resolved) promise.
+It ignores failures until it finds a success.
+
+15.Callback Hell or Pyramid of Doom In JavaScript
+1.Horrible Readability
+2.Bad Indentation/Alignment of code
+3.Error handling
